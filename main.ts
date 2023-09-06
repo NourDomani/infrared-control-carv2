@@ -48,6 +48,7 @@ makerbit.onIrButton(IrButton.NUM2, IrButtonAction.Pressed, function () {
 makerbit.onIrButton(IrButton.Up, IrButtonAction.Pressed, function () {
     mbit_Robot.CarCtrlSpeed(mbit_Robot.CarState.Car_Run, 100)
     basic.pause(300)
+    basic.showIcon(IconNames.Happy)
     mbit_Robot.CarCtrl(mbit_Robot.CarState.Car_Stop)
 })
 makerbit.onIrButton(IrButton.NUM5, IrButtonAction.Pressed, function () {
